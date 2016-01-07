@@ -1,3 +1,5 @@
+Going by [Joanne's design](http://ugrad.cs.jhu.edu/~cs120/schedule.shtml), class is broadly divided into 7 units (weeks) dedicated to C and 7 more dedicated to C++.  Then one unit for final project work.
+
 * Getting around on systems
     * UNIX commands
         * directories, parent, ls, pwd, cat, more, less
