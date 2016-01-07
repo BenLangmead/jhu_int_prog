@@ -1,0 +1,58 @@
+# The #include directive in C++
+
+C++ headers do not use the `.h` suffix.  We've seen this:
+
+<!---cppmd-file unit7_headers1.cpp
+#include <iostream>
+
+int main(void) {
+	std::cout << "Hello world" << std::endl;
+	return 0;
+}
+-->
+
+<!---cppmd-shell
+g++ -std=c++11 -pedantic -Wall -Wextra -o unit7_headers1 unit7_headers1.cpp
+./unit7_headers1
+-->
+
+# C headers/libraries in C++
+
+Familiar C libraries and headers (`math.h`, `math.h`) are still available, but go by different names.
+
+# C headers/libraries in C++
+
+<!---cppmd-file unit7_headers2.cpp
+#include <iostream>
+#include <math>
+
+int main(void) {
+	std::cout << cos(0) << std::endl;
+	return 0;
+}
+-->
+
+C++ doesn't have `math.h`:
+
+<!---cppmd-shell
+g++ -std=c++11 -pedantic -Wall -Wextra -o unit7_headers2 unit7_headers2.cpp
+-->
+
+# C headers/libraries in C++
+
+<!---cppmd-file unit7_headers3.cpp
+#include <iostream>
+#include <cmath>
+
+int main(void) {
+	std::cout << cos(0) << std::endl;
+	return 0;
+}
+-->
+
+That works:
+
+<!---cppmd-shell
+g++ -std=c++11 -pedantic -Wall -Wextra -o unit7_headers3 unit7_headers3.cpp
+./unit7_headers3
+-->
